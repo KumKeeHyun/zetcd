@@ -16,6 +16,15 @@ export SHA
 release-binary:
 	./scripts/release-binary
 
+release-binary-zetcd:
+	./scripts/release-binary-arg zetcd
+
+release-binary-zkboom:
+	./scripts/release-binary-arg zkboom
+
+release-binary-zkctl:
+	./scripts/release-binary-arg zkctl
+
 bin/zetcd-release:
 	./scripts/docker-build
 

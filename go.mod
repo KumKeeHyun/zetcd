@@ -1,0 +1,39 @@
+module github.com/etcd-io/zetcd
+
+go 1.17
+
+require (
+	github.com/beorn7/perks v0.0.0-20160804104726-4c0e84591b9a
+	github.com/boltdb/bolt v1.3.0
+	github.com/coreos/etcd v3.2.6+incompatible
+	github.com/coreos/go-semver v0.2.0
+	github.com/coreos/go-systemd v0.0.0-20161114122254-48702e0da86b
+	github.com/coreos/pkg v0.0.0-20160727233714-3ac0863d7acf
+	github.com/cpuguy83/go-md2man v1.0.7
+	github.com/dgrijalva/jwt-go v3.0.0+incompatible
+	github.com/gogo/protobuf v0.0.0-20160824171236-909568be09de
+	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
+	github.com/golang/groupcache v0.0.0-20160516000752-02826c3e7903
+	github.com/golang/protobuf v0.0.0-20161109072736-4bd1920723d7
+	github.com/google/btree v0.0.0-20161005200959-925471ac9e21
+	github.com/grpc-ecosystem/go-grpc-prometheus v0.0.0-20160910222444-6b7015e65d36
+	github.com/inconshreveable/mousetrap v1.0.0
+	github.com/jonboulle/clockwork v0.1.0
+	github.com/matttproud/golang_protobuf_extensions v1.0.1
+	github.com/prometheus/client_golang v0.8.0
+	github.com/prometheus/client_model v0.0.0-20170216185247-6f3806018612
+	github.com/prometheus/common v0.0.0-20170220103846-49fee292b27b
+	github.com/prometheus/procfs v0.0.0-20170216223256-a1dba9ce8bae
+	github.com/russross/blackfriday v0.0.0-20170728175326-4048872b16cc
+	github.com/samuel/go-zookeeper v0.0.0-20170815201139-e6b59f6144be
+	github.com/spf13/cobra v0.0.0-20151124153217-1c44ec8d3f15
+	github.com/spf13/pflag v1.0.0
+	github.com/ugorji/go v0.0.0-20170107133203-ded73eae5db7
+	github.com/xiang90/probing v0.0.0-20160813154853-07dd2e8dfe18
+	golang.org/x/crypto v0.0.0-20150218234220-1351f936d976
+	golang.org/x/net v0.0.0-20170421002609-c8c74377599b
+	golang.org/x/sys v0.0.0-20170303135930-e48874b42435
+	golang.org/x/text v0.0.0-20170810154203-b19bf474d317
+	golang.org/x/time v0.0.0-20170420181420-c06e80d9300e
+	google.golang.org/grpc v1.2.1
+)
