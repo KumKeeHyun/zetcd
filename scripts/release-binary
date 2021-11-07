@@ -1,6 +1,7 @@
 #!/bin/sh
 
 REPO_PATH=github.com/etcd-io/zetcd
+GOBIN=$(PWD)/bin
 
 go build -mod=mod -o $GOBIN/zetcd -v \
   -ldflags "-w -X $REPO_PATH/version.Version=$VERSION -X $REPO_PATH/version.SHA=$SHA" \

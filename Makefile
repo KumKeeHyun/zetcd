@@ -3,7 +3,7 @@ export PATH := $(PWD)/bin:$(PATH)
 VERSION ?= $(shell ./scripts/git-version)
 SHA ?= $(shell git rev-parse HEAD)
 
-DOCKER_IMAGE = kbzjung359/zetcd:v0.0.5-arm64
+DOCKER_IMAGE = kbzjung359/zetcd:v0.0.5-alpine-arm64
 
 $(shell mkdir -p bin)
 
@@ -28,8 +28,6 @@ bin/zetcd-release:
 	./scripts/docker-build
 
 docker-image: 
-	#bin/zetcd-release
-	release-binary
 	docker build -t $(DOCKER_IMAGE) .
 
 clean:
