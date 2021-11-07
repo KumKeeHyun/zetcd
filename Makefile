@@ -3,8 +3,7 @@ export PATH := $(PWD)/bin:$(PATH)
 VERSION ?= $(shell ./scripts/git-version)
 SHA ?= $(shell git rev-parse HEAD)
 
-DOCKER_IMAGE_GCR = gcr.io/etcd-development/zetcd:$(VERSION)
-DOCKER_IMAGE_QUAY = quay.io/etcd-io/zetcd:$(VERSION)
+DOCKER_IMAGE = kbzjung359/zetcd:v0.0.5-arm64
 
 $(shell mkdir -p bin)
 
@@ -28,9 +27,10 @@ release-binary-zkctl:
 bin/zetcd-release:
 	./scripts/docker-build
 
-docker-image: bin/zetcd-release
-	docker build -t $(DOCKER_IMAGE_GCR) .
-	docker build -t $(DOCKER_IMAGE_QUAY) .
+docker-image: 
+	#bin/zetcd-release
+	release-binary
+	docker build -t $(DOCKER_IMAGE) .
 
 clean:
 	rm -rf bin/

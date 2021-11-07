@@ -1,0 +1,11 @@
+version: '2'
+services:
+  etcd:
+    image: 'kbzjung359/zetcd:v0.0.5-arm64'
+    command: [
+      "zetcd",
+      "--zkaddr 0.0.0.0:2181",
+      "--endpoints ${ETCD_IP}:2379"
+    ]
+    ports:
+      - 2181:2181
